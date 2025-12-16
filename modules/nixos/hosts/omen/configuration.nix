@@ -6,6 +6,7 @@ in {
       hyprland
       helix
       nvidia
+      hjem
     ];
 
     services.displayManager.gdm.enable = true;
@@ -21,13 +22,6 @@ in {
       alsa.support32Bit = true;
       pulse.enable = true;
       #jack.enable = true;
-    };
-
-    users.users.${config.flake.settings.username} = {
-      isNormalUser = true;
-      description = "person";
-      extraGroups = [ "networkmanager" "wheel" ];
-      packages = with pkgs; [];
     };
 
     environment.systemPackages = with pkgs; [
