@@ -23,7 +23,7 @@ in {
       #jack.enable = true;
     };
 
-    users.users.awesome = {
+    users.users.${config.flake.settings.username} = {
       isNormalUser = true;
       description = "person";
       extraGroups = [ "networkmanager" "wheel" ];
