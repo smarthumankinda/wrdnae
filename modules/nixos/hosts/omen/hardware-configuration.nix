@@ -1,0 +1,34 @@
+{
+  flake.modules.nixos.omen = {config, lib, modulesPath, ...}: {
+    
+    imports =
+      [ (modulesPath + "/installer/scan/not-detected.nix")
+      ];
+
+    boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "usbhid" "usb_storage" "sd_mod" "sdhci_pci" ];
+    boot.initrd.kernelModules = [ ];
+    boot.kernelModules = [ "kvm-intel" ];
+    boot.extraModulePackages = [ ];
+    boot.initrd.luks.devices."luks-a531c365-5ecb-42e1-912a-e7bb4ecd450c".device = "/dev/disk/by-uuid/a531c365-5ecb-42e1-912a-e7bb4ecd450c";
+
+
+    fileSystems."/" =
+      { device = "/dev/mapper/luks-fb686bde-31ca-4880-9797-e8d7e9ba4bd2";
+        fsType = "ext4";
+      };
+
+    boot.initrd.luks.devices."luks-fb686bde-31ca-4880-9797-e8d7e9ba4bd2".device = "/dev/disk/by-uuid/fb686bde-31ca-4880-9797-e8d7e9ba4bd2";
+
+    fileSystems."/boot" =
+      { device = "/dev/disk/by-uuid/44C6-6B90";
+        fsType = "vfat";
+        options = [ "fmask=0077" "dmask=0077" ];
+      };
+
+    swapDevices =
+      [ { device = "/dev/mapper/luks-a531c365-5ecb-42e1-912a-e7bb4ecd450c"; }
+      ];
+
+    hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  };
+}
