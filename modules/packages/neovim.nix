@@ -1,7 +1,8 @@
 { inputs, ... }: {
-  perSystem = { pkgs, ... }: {
+  perSystem = {pkgs, ...}: {
     packages.neovim = (inputs.nvf.lib.neovimConfiguration {
-      pkgs = pkgs.legacyPackages.x86_64-linux;
+      inherit pkgs;
+      
       modules = [
         {
           config.vim = {
