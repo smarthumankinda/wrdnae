@@ -1,4 +1,4 @@
-# Honestly just yoinked from @argosnothing
+# Honestly just yoinked from @argosnothing (almost) word to word I do not claim to have written this code by my self
 
 {
   inputs,
