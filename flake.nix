@@ -6,6 +6,7 @@
     wrappers.url = "github:Lassulus/wrappers";
     devshell.url = "github:numtide/devshell";
     hjem-impure.url = "github:Rexcrazy804/hjem-impure";
+    hjem.url = "github:feel-co/hjem";
     systems = {
       url = "github:nix-systems/default";
     };

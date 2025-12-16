@@ -26,7 +26,7 @@ status is-interactive; and begin
 
     # Interactive shell initialisation
     if test "$TERM" != dumb
-        /nix/store/9fnhax88khgd917p1mnnb649a1fpr0jq-starship-1.23.0/bin/starship init fish | source
+        starship init fish | source
 
     end
 

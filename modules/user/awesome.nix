@@ -2,7 +2,11 @@
   userName = config.flake.settings.username;
 in {
   flake.modules.nixos.hjem = {pkgs, ...}: {
-    users.users.awesome = {
+    imports = [
+      inputs.hjem.nixosModules.default
+    ];
+    
+    users.users.${userName} = {
       isNormalUser = true;
       description = "person";
       shell = pkgs.fish;
@@ -10,8 +14,8 @@ in {
     
       packages = with pkgs; [
         # Caelestia
-        inputs.caelestia-shell.packages.${system}.default
-        inputs.caelestia-cli.packages.${system}.default
+        inputs.caelestia-shell.packages."x86_64-linux".default
+        inputs.caelestia-cli.packages."x86_64-linux".default
         wl-clipboard
         cliphist
         libnotify
@@ -36,21 +40,22 @@ in {
 
     programs.fish.enable = true;
 
-    hjem = {
+    hjem = let
+      dotsDir = "${./dots}";
+    in {
       extraModules = [ inputs.hjem-impure.hjemModules.default ];
     
       users.${userName} = {
         impure = {
           enable = true;
-          dotsDir = "${./dots}";
-          dotsDirImpure = "/home/${userName}/wrdnae/users/dots";
-          parseAttrs = [config.hjem.users.${userName}.xdg.config.files];
+          dotsDir = "${dotsDir}";
+          dotsDirImpure = "/home/${userName}/wrdnae/modules/user/dots";
         };
 
         clobberFiles = true;
       
         xdg.config.files = let
-          dots = config.hjem.users.${userName}.impure.dotsDir;
+          dots = dotsDir;
         in {
           # Fish
           "fish".source = dots + "/fish";
@@ -67,7 +72,7 @@ in {
         };
       
         files = let
-          dots = config.hjem.users.${userName}.impure.dotsDir;
+          dots = dotsDir;
         in {
           # Firefox
           ".mozilla/firefox/profiles.ini".source = dots + "/firefox/profiles.ini";
