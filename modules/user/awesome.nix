@@ -1,4 +1,4 @@
-{ config, inputs, ... }: let
+{ config, inputs, self, ... }: let
   userName = config.flake.settings.username;
 in {
   flake.modules.nixos.hjem = {pkgs, ...}: {
@@ -16,6 +16,7 @@ in {
         # Caelestia
         inputs.caelestia-shell.packages."x86_64-linux".default
         inputs.caelestia-cli.packages."x86_64-linux".default
+        self.packages."x86_64-linux".hx-regular
         wl-clipboard
         cliphist
         libnotify
