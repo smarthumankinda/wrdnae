@@ -18,8 +18,8 @@
       inherit system;
       modules = [
         config.flake.modules.nixos.${name}
+        config.flake.modules.nixos.core
         {
-          my.hostname = name;
           networking.hostName = lib.mkDefault name;
           nixpkgs = {
             hostPlatform = lib.mkDefault system;
