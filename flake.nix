@@ -7,6 +7,7 @@
     devshell.url = "github:numtide/devshell";
     hjem-impure.url = "github:Rexcrazy804/hjem-impure";
     hjem.url = "github:feel-co/hjem";
+    nvf.url = "github:notashelf/nvf";
     systems = {
       url = "github:nix-systems/default";
     };

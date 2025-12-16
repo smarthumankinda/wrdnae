@@ -18,7 +18,6 @@ status is-interactive; and begin
     # Abbreviations
 
     # Aliases
-    alias nr 'sudo nixos-rebuild switch --flake'
     alias qsd 'nix develop ~/dix#quickshell'
     alias rsd 'nix develop ~/dix#rustlings'
     alias ls 'eza --icons'
