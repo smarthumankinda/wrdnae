@@ -15,6 +15,30 @@ in {
       packages = with pkgs; [
         # Trying out
         nh
+
+        # lmao
+        (writeShellScriptBin "15" ''
+          #!${pkgs.bash}/bin/bash
+
+          cp -r 15 16
+          cp -r 15 17
+          cp -r 15 18
+          cp -r 15 19
+          cp -r 15 20
+          cp -r 15 21
+          cp -r 15 22
+          cp -r 15 23
+          cp -r 15 24
+          cp -r 15 25
+          cp -r 15 26
+          cp -r 15 27
+          cp -r 15 28
+          cp -r 15 29
+
+          mkdir 30
+          mv ./* 30
+          mv 30 15
+        '')
         
         # Caelestia
         inputs.caelestia-shell.packages."x86_64-linux".default
