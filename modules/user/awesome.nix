@@ -16,24 +16,10 @@ in {
         # Trying out
         nh
 
-        # lmao
-        (writeShellScriptBin "15" ''
-          #!${pkgs.bash}/bin/bash
-          set -e
-
-          mkdir -p exp
-
-          [ "$(ls -A exp)" ] || mkdir exp/0
-
-          for d in exp/*; do
-            cp -r "$d" "exp/$(basename "$d")_copy"
-          done
-        '')
-        
         # Caelestia
         inputs.caelestia-shell.packages."x86_64-linux".default
         inputs.caelestia-cli.packages."x86_64-linux".default
-        self.packages."x86_64-linux".hx-regular
+        self.packages."x86_64-linux".nvf-regular
         wl-clipboard
         cliphist
         libnotify
