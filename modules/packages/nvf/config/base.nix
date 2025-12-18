@@ -8,6 +8,10 @@
         name = "catppuccin";
         style = "mocha";
       };
+      clipboard = {
+        enable = true;
+        providers.wl-copy.enable = true;
+      };
     };
   };
 }
