@@ -20,7 +20,7 @@ status is-interactive; and begin
     # Aliases
     alias qsd 'nix develop ~/wrdnae#quickshell'
     alias rsd 'nix develop ~/wrdnae#rustlings'
-    alias v 'nix run ~/wrdnae#nvf-regular'
+    alias nvf 'nix run ~/wrdnae#nvf-regular'
     alias ls 'eza --icons'
     alias hjem-pure 'systemd-tmpfiles --user --create'
 
