@@ -12,10 +12,23 @@
         enable = true;
         providers.wl-copy.enable = true;
       };
-
       luaConfigRC.clipboard = ''
         vim.opt.clipboard = "unnamedplus"
       '';
+      keymaps = [
+        {
+          key = "<C-d>";
+          mode = "n";
+          silent = true;
+          action = "<C-d>zz";
+        }
+        {
+          key = "<C-u>";
+          mode = "n";
+          silent = true;
+          action = "<C-u>zz";
+        }
+      ];
     };
   };
 }
