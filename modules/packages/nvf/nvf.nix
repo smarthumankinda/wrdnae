@@ -4,6 +4,7 @@
   inherit
     (config.flake.modules.nvf)
     regular
+    rust
     ;
 in {
   perSystem = {pkgs, ...}: let
@@ -14,6 +15,7 @@ in {
     in {
     packages = {
       nvf-regular = mkNvf [regular];
+      nvf-rust = mkNvf [regular rust];
     };
   };
 }
