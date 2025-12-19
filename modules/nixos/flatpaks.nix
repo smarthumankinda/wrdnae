@@ -11,6 +11,7 @@
         location = "https://flathub.org/repo/flathub.flatpakrepo";
       }];
       packages = [
+        { appId = "com.spotify.Client"; origin = "flathub"; }
         { appId = "org.vinegarhq.Sober"; origin = "flathub"; }
       ];
     };

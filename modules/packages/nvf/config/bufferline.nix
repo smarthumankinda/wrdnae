@@ -19,6 +19,12 @@
           silent = true;
           action = ":BufferLineCycleNext<CR>";
         }
+        {
+          key = "<leader>bd";
+          mode = "n";
+          silent = true;
+          action = ":let &showtabline = (&showtabline == 2 ? 1 : 2)<CR>";
+        }
       ];
     };
   };
