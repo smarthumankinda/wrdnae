@@ -10,13 +10,15 @@
       telescope.enable = true;
       autocomplete.blink-cmp.enable = true;
       visuals = {
-        indent-blankline.enable = true;
+        indent-blankline.enable = false;
+        nvim-web-devicons.enable = true;
       };
       binds = {
         whichKey.enable = true;
       };
       ui = {
         noice.enable = true;
+        colorizer.enable = true;
       };
       utility = {
         multicursors.enable = true;
