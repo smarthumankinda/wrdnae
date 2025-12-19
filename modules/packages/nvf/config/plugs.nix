@@ -19,6 +19,9 @@
       binds = {
         whichKey.enable =true;
       };
+      ui = {
+        noice.enable = true;
+      };
     };
   };
 }

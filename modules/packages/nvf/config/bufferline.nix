@@ -6,6 +6,11 @@
         mappings.closeCurrent = "bx";
       };
 
+      luaConfigRC.bufferline = ''
+        vim.opt.showtabline = 0
+      '';
+
+
       keymaps = [
         {
           key = "H";
