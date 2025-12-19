@@ -1,6 +1,6 @@
 {
   perSystem = { self', pkgs, ... }: {
-    devshells.rustlings = {
+    devshells.rust = {
       devshell = {
         packages = [
           pkgs.cargo
