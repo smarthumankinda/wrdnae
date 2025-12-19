@@ -2,7 +2,7 @@
   flake.modules.nvf.base = {
     config.vim = {
       treesitter.enable = true;
-      options.shiftwidth = 2;
+      options.shiftwidth = 4;
       theme = {
         enable = true;
         name = "catppuccin";

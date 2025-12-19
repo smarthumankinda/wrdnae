@@ -7,7 +7,6 @@
     rust
     python
     quickshell
-    prog 
     ;
 in {
   perSystem = {pkgs, ...}: let
@@ -18,9 +17,9 @@ in {
     in {
     packages = {
       nvf-regular = mkNvf [regular];
-      nvf-rust = mkNvf [regular rust prog];
-      nvf-python = mkNvf [regular python prog];
-      nvf-quickshell = mkNvf [regular quickshell prog];
+      nvf-rust = mkNvf [regular rust];
+      nvf-python = mkNvf [regular python];
+      nvf-quickshell = mkNvf [regular quickshell];
     };
   };
 }
