@@ -9,6 +9,7 @@
       autopairs.nvim-autopairs.enable = true;
       telescope.enable = true;
       autocomplete.blink-cmp.enable = true;
+      git.enable = true;
       visuals = {
         indent-blankline.enable = true;
         nvim-web-devicons.enable = true;
