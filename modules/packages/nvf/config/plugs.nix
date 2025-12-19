@@ -13,7 +13,7 @@
         indent-blankline.enable = true;
       };
       binds = {
-        whichKey.enable =true;
+        whichKey.enable = true;
       };
       ui = {
         noice.enable = true;

@@ -5,8 +5,8 @@
             options.shiftwidth = 4;
             theme = {
                 enable = true;
-                name = "everforest";
-                style = "hard";
+                name = "catppuccin";
+                style = "mocha";
             };
 
             clipboard = {
@@ -14,8 +14,8 @@
                 providers.wl-copy.enable = true;
             };
             luaConfigRC.base = ''
-        vim.opt.clipboard = "unnamedplus"
-        vim.opt.fillchars = { eob = " " }
+                vim.opt.clipboard = "unnamedplus"
+                vim.opt.fillchars = { eob = " " }
             '';
             keymaps = [
                 {
