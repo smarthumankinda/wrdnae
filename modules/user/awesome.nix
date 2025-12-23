@@ -20,6 +20,7 @@ in {
       packages = with pkgs; [
         # Trying out
         nh
+        youtube-music
 
         # Caelestia
         inputs.caelestia-shell.packages."x86_64-linux".default
