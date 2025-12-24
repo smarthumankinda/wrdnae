@@ -11,7 +11,7 @@
         location = "https://flathub.org/repo/flathub.flatpakrepo";
       }];
       packages = [
-        { appId = "org.vinegarhq.Sober"; origin = "flathub"; }
+        # { appId = "org.smth.smth"; origin = "flathub"; }
       ];
     };
   };
