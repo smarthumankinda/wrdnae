@@ -20,6 +20,7 @@ in {
       packages = with pkgs; [
         # Trying out
         clang-tools
+        lldb
         nh
         youtube-music
 
