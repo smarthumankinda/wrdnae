@@ -19,6 +19,7 @@ in {
 
       packages = with pkgs; [
         # Trying out
+        clang-tools
         nh
         youtube-music
 
