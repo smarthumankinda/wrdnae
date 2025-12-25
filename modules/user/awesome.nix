@@ -20,6 +20,8 @@ in {
       packages = with pkgs; [
         # Trying out
         nh
+        code
+        gcc
         youtube-music
 
         # Caelestia
