@@ -21,6 +21,7 @@ in {
         # Trying out
         nh
         vscode
+        python3
         gcc
         youtube-music
 
