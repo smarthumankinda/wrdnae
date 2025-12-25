@@ -5,7 +5,6 @@
         packages = [
           self'.packages.hx-cpp
           pkgs.gcc
-          pkgs.clang-tools
           pkgs.cmake
           pkgs.ninja
         ];

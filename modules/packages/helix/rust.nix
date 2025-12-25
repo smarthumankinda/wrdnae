@@ -10,7 +10,7 @@
       languages = {
         language = [
           {
-            name = "python";
+            name = "rust";
             auto-format = true;
             indent = { tab-width = 4; unit = "    "; };
             language-servers = [ "scls" "rust-analyzer" ];
