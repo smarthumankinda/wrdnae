@@ -3,9 +3,11 @@
     devshells.cpp = {
       devshell = {
         packages = [
-          self'.packages.hx-regular
+          self'.packages.hx-cpp
           pkgs.gcc
           pkgs.clang-tools
+          pkgs.cmake
+          pkgs.ninja
         ];
 
         interactive.fish.text = ''
