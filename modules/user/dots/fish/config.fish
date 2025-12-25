@@ -21,7 +21,7 @@ status is-interactive; and begin
     alias qsd 'nix develop ~/wrdnae#quickshell'
     alias rsd 'nix develop ~/wrdnae#rust'
     alias psd 'nix develop ~/wrdnae#python'
-    alias psd 'nix develop ~/wrdnae#cpp'
+    alias csd 'nix develop ~/wrdnae#cpp'
     alias ls 'eza --icons'
     alias hjem-pure 'systemd-tmpfiles --user --create'
 
