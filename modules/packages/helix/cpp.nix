@@ -42,6 +42,7 @@
 
       extraPackages = with pkgs; [
         simple-completion-language-server
+        clang-tools
       ];
 
       themes = { };
