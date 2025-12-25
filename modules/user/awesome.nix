@@ -19,9 +19,6 @@ in {
 
       packages = with pkgs; [
         # Trying out
-        clang
-        clang-tools
-        lldb
         nh
         youtube-music
 
