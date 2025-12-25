@@ -37,21 +37,11 @@
               NIX_LOG = "info,simple-completion-language-server=info";
             };
           };
-
-          clangd = {
-            command = "clangd";
-            args = [
-              "--query-driver=/nix/store/*/bin/g++"
-              "--background-index"
-              "--clang-tidy"
-            ];
-          };
         };
       };
 
       extraPackages = with pkgs; [
         simple-completion-language-server
-        clang-tools
       ];
 
       themes = { };
