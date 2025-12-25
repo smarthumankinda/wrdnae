@@ -1,5 +1,5 @@
 {
-  theme = "dark-synthwave";
+  theme = "github_dark";
 
   editor = {
     soft-wrap.enable = true;
