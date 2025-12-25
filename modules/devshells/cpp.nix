@@ -4,7 +4,7 @@
       devshell = {
         packages = [
           self'.packages.hx-regular
-          pkgs.clang
+          pkgs.gcc
           pkgs.clang-tools
         ];
 
