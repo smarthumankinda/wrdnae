@@ -4,9 +4,9 @@
       lsp = {
         enable = true;
         trouble.enable = true;
-      }
+      };
 
       diagnostics.enable = true;
-    }
+    };
   };
 }
