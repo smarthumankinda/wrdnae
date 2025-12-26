@@ -6,7 +6,10 @@
         trouble.enable = true;
       };
 
-      diagnostics.enable = true;
+      diagnostics = {
+        enable = true;
+        nvim-lint.enable = true;
+      };
     };
   };
 }
