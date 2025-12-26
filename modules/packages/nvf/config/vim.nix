@@ -3,11 +3,14 @@
     vim = {
       theme.enable = true;
       treesitter.enable = true;
-      lsp.enable = true;
       git.enable = true;
       clipboard = {
         enable = true;
         registers = "unnamedplus";
+      };
+      lsp = {
+        enable = true;
+        trouble.enable = true;
       };
     };
   };
