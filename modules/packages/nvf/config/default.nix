@@ -5,7 +5,6 @@
       telescope
       mini
       notes
-      lsp
     ];
   };
 }
