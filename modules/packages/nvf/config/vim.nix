@@ -18,8 +18,8 @@
       };
       luaConfigRC.minimal = ''
         vim.opt.shortmess:append("I")
+        vim.opt.fillchars = { eob = " " }
       '';
-        # vim.opt.fillchars = { eob = " " }
     };
   };
 }
