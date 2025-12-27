@@ -3,6 +3,11 @@
     vim = {
       lsp = {
         enable = true;
+
+        trouble = {
+          enable = true;
+          mappings.quickfix = "<leader>F";
+        };
       };
 
       diagnostics = {
