@@ -19,7 +19,7 @@
           {
             name = "qml";
             auto-format = false;
-            indent = { tab-width = 2; unit = "  "; };
+            indent = { tab-width = 4; unit = "    "; };
             language-servers = [ "qmlls" "scls" ];
           }
         ];
