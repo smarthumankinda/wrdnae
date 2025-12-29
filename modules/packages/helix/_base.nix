@@ -1,5 +1,5 @@
 {
-  theme = "github_dark";
+  theme = "base16_default";
 
   editor = {
     soft-wrap.enable = true;
