@@ -23,6 +23,7 @@ in {
         gimp
         python3
         youtube-music
+        inputs.zen-browser.packages."x86_64".beta
 
         # Caelestia
         inputs.caelestia-shell.packages."x86_64-linux".default
