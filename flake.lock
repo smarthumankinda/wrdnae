@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "ambxsd": {
+    "ambxst": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -285,7 +285,7 @@
     "quickshell": {
       "inputs": {
         "nixpkgs": [
-          "ambxsd",
+          "ambxst",
           "nixpkgs"
         ]
       },
@@ -323,7 +323,7 @@
     },
     "root": {
       "inputs": {
-        "ambxsd": "ambxsd",
+        "ambxst": "ambxst",
         "devshell": "devshell",
         "flake-parts": "flake-parts",
         "hjem": "hjem",
