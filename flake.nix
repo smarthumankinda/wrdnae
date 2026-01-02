@@ -13,7 +13,7 @@
       url = "github:nix-systems/default";
     };
     ambxst = {
-      url = "github:darsh032/uhh";
+      url = "github:darsh032/ambxst-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # caelestia-shell = {
