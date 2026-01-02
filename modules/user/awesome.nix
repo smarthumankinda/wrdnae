@@ -28,7 +28,7 @@ in {
         # Caelestia
         # inputs.caelestia-shell.packages."x86_64-linux".default
         # inputs.caelestia-cli.packages."x86_64-linux".default
-        inputs.ambxst.packages."x86_64-linux".default
+        inputs.ambxst.packages."x86_64-linux".ambxst-cli
         self.packages."x86_64-linux".hx-regular
         wl-clipboard
         cliphist
