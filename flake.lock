@@ -28,17 +28,16 @@
     "ambxst-fork": {
       "flake": false,
       "locked": {
-        "lastModified": 1767337515,
-        "narHash": "sha256-2cRA7qc8eE+KYSGubhHwwH66h3jVbIi4EAHRwd6K624=",
-        "owner": "Dyssrupt",
-        "repo": "ambxst",
-        "rev": "f83a188ce08616a4ef8073e4488c60190ee0102b",
+        "lastModified": 1767458142,
+        "narHash": "sha256-Iuk9tWJSAKaT2mfCpSPeb9uZUvHM+oRKtoWKsp5+VMw=",
+        "owner": "rafmiqgus",
+        "repo": "ambxst-fork",
+        "rev": "4727e6984b1090111fae0018f174401fb4a185a0",
         "type": "github"
       },
       "original": {
-        "owner": "Dyssrupt",
-        "ref": "add-hibernate",
-        "repo": "ambxst",
+        "owner": "rafmiqgus",
+        "repo": "ambxst-fork",
         "type": "github"
       }
     },

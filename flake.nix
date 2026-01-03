@@ -17,7 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ambxst-fork = {
-      url = "github:Dyssrupt/ambxst/add-hibernate";  
+      url = "github:rafmiqgus/ambxst-fork";  
       flake = false;
     };
     # caelestia-shell = {
